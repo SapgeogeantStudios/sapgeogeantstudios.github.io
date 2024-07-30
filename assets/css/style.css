@@ -1,0 +1,47 @@
+.navbar {
+    height: 4rem;
+    width: 100%;
+    position: fixed;
+    align-items: center;
+}
+
+.navbar--top {
+    height: 1rem;
+    width: 100%;
+    background-color: red;
+}
+
+.navbar__deco {}
+
+.deco--red {}
+
+.deco--yellow {}
+
+.deco--green {}
+
+.deco--blue {}
+
+.navbar--left {
+    height: 3rem;
+    margin-left: 1.2rem;
+}
+
+.navbar__icon {
+    text-decoration: none;
+    display: flex;
+    width: 10rem;
+    height: 3rem;
+    justify-content: space-around;
+    color: black;
+}
+
+.navbar__icon--img {
+    height: 3rem;
+}
+
+.navbar__icon--text {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+}
