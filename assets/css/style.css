@@ -6,7 +6,7 @@
 }
 
 .navbar--top {
-    height: 1rem;
+    height: .8rem;
     width: 100%;
     background-color: red;
 }
@@ -21,27 +21,33 @@
 
 .deco--blue {}
 
+.navbar--mid {
+    padding: 1rem;
+}
+
 .navbar--left {
-    height: 3rem;
+    height: 5rem;
     margin-left: 1.2rem;
 }
 
 .navbar__icon {
+    align-items: center;
     text-decoration: none;
     display: flex;
-    width: 10rem;
-    height: 3rem;
-    justify-content: space-around;
+    width: 15.2rem;
+    height: 5rem;
+    justify-content: space-between;
     color: black;
 }
 
 .navbar__icon--img {
-    height: 3rem;
+    height: 5rem;
 }
 
 .navbar__icon--text {
-    font-size: 1.3rem;
+    font-size: 2rem;
     font-weight: 600;
+    line-height: 2.1rem;
     margin: 0;
     padding: 0;
 }
