@@ -177,6 +177,7 @@
 
 .content__news--mid {
     margin-top: 10rem;
+    margin-bottom: 5rem;
     display: flex;
     justify-content: space-around;
     width: 100%;
@@ -187,18 +188,20 @@
 .content__news--preview {
     width: 32rem;
     height: 45rem;
-    background-color: blue;
-    display: block;
+    background-color: transparent;
+    display: none;
     border-radius: 3.2rem;
 }
-
-
 
 .content__news--list {
     width: 65%;
     list-style-type: none;
     margin: 0;
     padding: 0;
+}
+
+.content__news--list:hover .content__news--preview {
+    display: block;
 }
 
 .content__news--item {
@@ -211,10 +214,6 @@
     border-bottom: 1px solid grey;
 }
 
-.content__news--item:hover .content__news--list {
-    justify-content: space-around;
-}
-
 
 .content__news--item-link {
     padding: .5rem;
@@ -222,13 +221,14 @@
     padding-bottom: 1.6rem;
     margin: 0;
     text-decoration: none;
-    color: black;
     line-height: 1.6rem;
     font-size: 1.6rem;
     font-weight: 600;
 }
 
-
+.content__news--item-link:hover .content__news--item-text {
+    color: red;
+}
 
 .content__news--item-date {
     margin: 0;
@@ -241,17 +241,71 @@
 }
 
 .content__news--item-text {
+    color: black;
     display: flex;
     flex-wrap: wrap;
     margin: 0;
     padding: .5rem;
 }
 
-.content__news--item--link:hover .content__news--item-text {
-    color: red !important;
+.content__news--bot {
+    margin-right: 4%;
+    display: flex;
+    justify-content: flex-end;
 }
+
+.content__news--more {
+    border-radius: .8rem;
+    width: 16rem;
+    display: flex;
+    text-decoration: none;
+    background-color: rgb(100, 100, 100);
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(100, 100, 100);
+}
+
+.content__news--more-text {
+    color: white;
+    font-size: 1.6rem;
+    padding-left: 2rem;
+    padding-right: 1rem;
+    font-weight: 600;
+}
+
+.content__news--more-icon {
+    color: white;
+    padding-left: 1rem;
+    padding-right: 2rem;
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+
+.content__news--more:hover {
+    background-color: white;
+}
+
+.content__news--more:hover .content__news--more-text {
+    color: rgb(100, 100, 100);
+}
+
+.content__news--more:hover .content__news--more-icon {
+    color: rgb(100, 100, 100);
+}
+
+/* products */
+
 .content__products {
     width: 100%;
     height: 100%;
-    background-color: red;
+    background-color: white;
+}
+
+.products__heading {
+    background-color: #ffff00;
+}
+
+.content__products--mid {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
 }
